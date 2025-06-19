@@ -1,0 +1,137 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.intervue-poll-badge {
+  background-color: #7765DA;
+  color: white;
+  padding: 7px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.login-content {
+  text-align: center;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.welcome-title {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #333;
+  font-weight: 600;
+}
+
+.welcome-subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 40px;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.role-selection {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.role-card {
+  flex: 1;
+  max-width: 350px;
+  border: 1px solid #7765DA;
+  border-radius: 10px;
+  padding: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.role-card.selected {
+  background-color: #f8f7ff;
+  border: 2px solid #7765DA;
+}
+
+.role-card h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #333;
+  font-weight: 600;
+}
+
+.role-card p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.student-name-input {
+  margin-top: 20px;
+}
+
+.student-name-input input {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  background-color: #f9f9f9;
+}
+
+.student-name-input input.error {
+  border-color: #ff3b3b;
+}
+
+.error-message {
+  color: #ff3b3b;
+  font-size: 12px;
+  margin-top: 5px;
+  text-align: left;
+}
+
+.continue-button {
+  background-color: #7765DA;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 40px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 250px;
+  margin-top: 20px;
+}
+
+.continue-button:disabled {
+  background-color: #c4c4c4;
+  cursor: not-allowed;
+}
+
+.continue-button:hover:not(:disabled) {
+  background-color: #5e4dc7;
+}
+
+@media (max-width: 768px) {
+  .role-selection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .role-card {
+    width: 100%;
+  }
+}

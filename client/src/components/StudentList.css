@@ -1,0 +1,82 @@
+.student-list-container {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eee;
+}
+
+.student-list-container h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+  border-bottom: 2px solid #7765DA;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.student-list-header {
+  display: flex;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  font-weight: 500;
+  color: #333;
+}
+
+.name-column {
+  flex: 1;
+}
+
+.action-column {
+  width: 80px;
+  text-align: center;
+}
+
+.student-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.student-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.student-name {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #333;
+  font-size: 14px;
+}
+
+.student-action {
+  width: 80px;
+  text-align: center;
+}
+
+.kick-btn {
+  background-color: transparent;
+  color: #7765DA;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 5px;
+  font-weight: 500;
+}
+
+.kick-btn:hover {
+  text-decoration: underline;
+}
+
+.no-students {
+  padding: 20px 0;
+  color: #666;
+  text-align: center;
+  font-style: italic;
+}
